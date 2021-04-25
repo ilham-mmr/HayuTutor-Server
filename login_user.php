@@ -25,7 +25,12 @@ $row = $result->fetch_assoc();
 if (password_verify($password, $row['password'])) {
 
     $array['status'] = 'success';
-    $array['user'] = array('full_name' => $row['full_name'], 'email' => $row['email'], 'registration_date' => $row['registration_date']);
+    $array['user'] = array(
+        'full_name' => $row['full_name'],
+        'email' => $row['email'],
+        'registration_date' => $row['registration_date'],
+        'picture' => $row['picture']
+    );
     sendJsonResponse($array);
 } else {
     $array['status'] = 'failed';
