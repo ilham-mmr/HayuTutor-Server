@@ -1,5 +1,5 @@
 <?php
-include_once("load_env.php");
+require("load_env.php");
 
 $servername = $_ENV['SERVER_NAME'];
 
