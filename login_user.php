@@ -26,10 +26,11 @@ if (password_verify($password, $row['password'])) {
 
     $array['status'] = 'success';
     $array['user'] = array(
+        'id' => $row['id'],
         'full_name' => $row['full_name'],
         'email' => $row['email'],
         'registration_date' => $row['registration_date'],
-        'picture' => $row['picture']
+        'picture' => 'https://luxfortis.studio/app/images/profile_pictures/' . $row['picture']
     );
     sendJsonResponse($array);
 } else {
