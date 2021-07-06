@@ -29,6 +29,7 @@ if (password_verify($password, $row['password'])) {
         'id' => $row['id'],
         'full_name' => $row['full_name'],
         'email' => $row['email'],
+        'isTutor' => $row['isTutor'],
         'registration_date' => $row['registration_date'],
         'picture' => 'https://luxfortis.studio/app/images/profile_pictures/' . $row['picture']
     );
