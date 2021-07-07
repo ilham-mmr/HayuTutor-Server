@@ -6,3 +6,6 @@ The database used in this project is Mysql.
 - the database is fully designed by me.
 
 ![alt text](https://github.com/ilham-mmr/HayuTutor-Server/blob/main/db_design.png)
+
+# Payment
+for the payment functionality I use Billplz sandbox as a payment platform https://www.billplz-sandbox.com/ 
